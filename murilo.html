@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futebol Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      max-height: 50px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hero {
+      position: relative;
+      height: 700px; 
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 40%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 56px; 
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0077b6;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #005f87;
+    }
+
+    .update-achievement {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .update,
+    .achievement {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .update img,
+    .achievement img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .update h2,
+    .achievement h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .update p,
+    .achievement p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .update,
+      .achievement {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      .hero {
+        height: 500px; /
+      }
+
+      .hero-content {
+        top: 30%; 
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logoneymar.png" alt="Futebol Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Players</a></li>
+        <li><a href="#">Matches</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://images.ctfassets.net/3mv54pzvptwz/3kPQqthUM0p8l5ENQ2n1Pt/d09ffae55c8729de0a971700693d1cd3/465802661_18470426266026340_5373960416773680565_n.jpg"" alt="Neymar">
+      </div>
+      <div class="hero-content">
+        <h1>Enquanto houver 1% de chance, existirá 99% de Fé</h1>
+        <a href="#" class="btn">Explorar</a>
+      </div>
+    </section>
+
+    <section class="update-achievement">
+      <div class="update">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyGeQf6HDsLnGCKRNpBwlTsLUvCG_-ieQvA&s" alt="Neymar">
+        <h2>Atualização Neymar Jr.</h2>
+        <p>Os exames revelaram que Neymar Jr. sofreu uma lesão nos isquiotibiais. Ele passará por um programa de tratamento e reabilitação que durará de quatro a seis semanas.</p>
+        <a href="#" class="btn">Leia mais</a>
+      </div>
+      <div class="achievement">
+        <img src= "https://images.ctfassets.net/3mv54pzvptwz/3kPQqthUM0p8l5ENQ2n1Pt/d09ffae55c8729de0a971700693d1cd3/465802661_18470426266026340_5373960416773680565_n.jpg" alt="Neymar">
+        <h2>Al-Hilal vence mais uma e mantém liderança da AFC Champions League</h2>
+        <p>Neymar Jr. entra na segunda etapa e brilha com sua atuação. O time saudita segue liderando a competição continental.</p>
+        <a href="#" class="btn">Leia mais</a>
+      </div>
+    </section> 
+  </main>
+  <section class="update-achievement">
+    <div class="update">
+      <img src="https://i0.wp.com/tconline.com.br/wp-content/uploads/2022/11/Neymar-Copa-do-Mundo.jpg?fit=1440%2C1440&ssl=1" alt="Neymar">
+      <h2>Jogos Neymar Jr.</h2>
+      <p>Neymar Jr. jogou em quatro grandes clubes ao longo de sua carreira profissional, além da Seleção Brasileira.Santos, Barcelona, PSG, Al-Hila, totalizando um total de 766 partidas jogadas.  
+        
+      </p>
+      <a href="#" class="btn">Leia mais</a>
+    </div>
+    <div class="achievement">
+      <img src="https://pbs.twimg.com/media/FP6SiQZXwAAA_Su.jpg:large" alt="Neymar">
+      <h2>Gols Neymar Jr.</h2>
+      <p>Neymar tem mais de 440 gols na carreira, incluindo clubes e seleção, sendo o maior artilheiro da Seleção Brasileira com 79 gols.</p>
+      <a href="#" class="btn">Leia mais</a>
+    </div>
+  </section> 
+</main>
+
+
+  <footer>
+    <p>&copy; 2024 Futebol.Neymar Júnior.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
